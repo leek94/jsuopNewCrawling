@@ -1,4 +1,4 @@
-package Controller;
+package controller;
 
 import entity.News;
 import org.springframework.stereotype.Controller;
@@ -20,9 +20,15 @@ public class NewsController {
 
     @GetMapping("/news")
     public String news(Model model) throws Exception{
-        List<News> newsList = newsService.getNewsDatas();
+        List<News> newsList = newsService.getNewsData();
         model.addAttribute("news", newsList);
 
         return "news";
+    }
+
+    @GetMapping("/hello")
+    public String hi(Model model){
+        model.addAttribute("name", "히히");
+        return "hello";
     }
 }
