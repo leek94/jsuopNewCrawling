@@ -1,4 +1,4 @@
-package service;
+package com.example.jsoupnewscrawling.service;
 
 import entity.News;
 import org.jsoup.Jsoup;

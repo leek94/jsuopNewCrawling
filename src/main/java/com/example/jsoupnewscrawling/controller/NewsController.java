@@ -1,10 +1,10 @@
-package controller;
+package com.example.jsoupnewscrawling.controller;
 
 import entity.News;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import service.NewsService;
+import com.example.jsoupnewscrawling.service.NewsService;
 
 import java.util.List;
 
